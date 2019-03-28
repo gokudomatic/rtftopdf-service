@@ -1,16 +1,16 @@
 # rtftopdf-service
 Python microservice to convert RTF (or any Word) documents to PDF using MS Word and OLE
 
-## Requirements:
+## Requirements
 - Windows XP or more recent
 - MS Office 2010 or more recent
 
-## Python libraries:
+## Python libraries
 - flask
 - optparse-pretty
 - pywin32
 
-## Usage:
+## Usage
 Start the service with:
 
 python rtftopdf-service.py [-H hostname=127.0.0.1] [-P port=5000]
