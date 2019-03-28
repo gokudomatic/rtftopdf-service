@@ -19,3 +19,4 @@ http://hostname:port/rtftopdf?input=<absolute_path_of_the_document>&out=<absolut
 Note:
 - The document must be accessible from the server where this script runs. No feature to upload a file. The ouput file is also stored on the server.
 - Must run on Windows because of the OLE automation. The absolute_path might need to be escaped (C:/my/path/input_file.rtf).
+- The script can run as a service, for instance with NSSM, but it needs to have the right to interact with the desktop (NSSM option).
