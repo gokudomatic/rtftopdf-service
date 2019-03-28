@@ -20,3 +20,6 @@ Note:
 - The document must be accessible from the server where this script runs. No feature to upload a file. The ouput file is also stored on the server.
 - Must run on Windows because of the OLE automation. The absolute_path might need to be escaped (C:/my/path/input_file.rtf).
 - The script can run as a service, for instance with NSSM, but it needs to have the right to interact with the desktop (NSSM option).
+
+Possible bug:
+- If the document has an error, Word might open a confirmation dialog to ask what to do. In that case, the script stay stuck waiting for Word. The process must then be killed manually.
